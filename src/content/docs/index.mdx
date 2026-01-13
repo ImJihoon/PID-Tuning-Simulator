@@ -1,0 +1,39 @@
+---
+title: PID Tuning Academy
+description: title page of this proj.
+
+template: splash # Remove or comment out this line to display the site sidebar on this page.
+
+hero:
+  tagline: "&quotwe have a 12 ball auto, trust.&quot - Cheemse 25'"
+
+  image:
+    file: ../../assets/logo.png
+  actions:
+    - text: Dive in to the lesson
+      link: /pid/example/
+      icon: right-arrow
+    - text: Get Rick Rolled
+      link: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Contained Within This Tutorial
+
+<CardGrid stagger>
+	<Card title="Learn PID" icon="pencil">
+		Learn how a PID Controller functions, and gain insight on what each gain means.
+	</Card>
+	<Card title="Get Real Experience with PID" icon="document">
+		Interact with a Real-Time updating simulator of a PID Controller.
+	</Card>
+	<Card title="Learn FeedForward" icon="add-document">
+		Learn an alternative for a PID Controller, and learn how it functions.
+	</Card>
+	<Card title="Try tuning you own FeedForward" icon="setting">
+		Interact with a Real-Time updating simulator of a Feed Controller.
+	</Card>
+</CardGrid>
