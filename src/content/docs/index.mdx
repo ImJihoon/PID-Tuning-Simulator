@@ -19,21 +19,29 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
 ## Contained Within This Tutorial
 
-<CardGrid stagger>
-	<Card title="Learn PID" icon="pencil">
-		Learn how a PID Controller functions, and gain insight on what each gain means.
-	</Card>
-	<Card title="Get Real Experience with PID" icon="document">
-		Interact with a Real-Time updating simulator of a PID Controller.
-	</Card>
-	<Card title="Learn FeedForward" icon="add-document">
-		Learn an alternative for a PID Controller, and learn how it functions.
-	</Card>
-	<Card title="Try tuning you own FeedForward" icon="setting">
-		Interact with a Real-Time updating simulator of a Feed Controller.
-	</Card>
+<CardGrid>
+	<LinkCard
+		title="Learn PID"
+		href="/pid/example/"
+		description="Learn how a PID Controller functions, and gain insight on what each gain means."
+		/>
+	<LinkCard
+		title="Get Real Experience with PID"
+		href="/pid/i18n/"
+		description="Interact with a Real-Time updating simulator of a PID Controller."
+	/>
+	<LinkCard
+		title="Learn FeedForward"
+		href="/ff/example/"
+		description="Learn an alternative for a PID Controller, and learn how it functions."
+	/>
+	<LinkCard
+		title="Try tuning you own FeedForward"
+		href="/ff/i18n/"
+		description="Interact with a Real-Time updating simulator of a Feed Controller."
+	/>
 </CardGrid>
